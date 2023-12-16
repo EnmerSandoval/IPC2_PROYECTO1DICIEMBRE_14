@@ -9,7 +9,7 @@ class ListaDoble:
         self.head = None
         self.end = None
 
-    def añadirNodoPrincipio(self, dato):
+    def agregar_nodo_inicio(self, dato):
         nuevoNodo = Nodo(dato)
 
         #Validamos si la lista esta vacia
@@ -25,7 +25,7 @@ class ListaDoble:
             nuevoNodo.siguiente = self.head
             self.head = nuevoNodo
 
-    def añadirNodoFinal(self, dato):
+    def agregar_nodo_final(self, dato):
         nuevoNodo = Nodo(dato)
 
         #insertamos si la lista esta vacia

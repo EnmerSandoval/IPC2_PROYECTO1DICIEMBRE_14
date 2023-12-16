@@ -1,10 +1,12 @@
 import sys
 import xml.etree.ElementTree as ET
 import lista_doble_enlazada
+import lista_doble_ciruclar
 import artistas
 import albums
 import canciones
 lista_artistas = lista_doble_enlazada.ListaDoble()
+lista_reproduccion = lista_doble_ciruclar.lista_circular()
 
 class Nodo:
     def __init__(self, dato):
@@ -32,7 +34,7 @@ def obtencion_datos(ruta):
 
         if lista_artistas.get(nombre_artista) is None:
             artista_nuevo = artistas.artista(nombre_artista)
-            lista_artistas.añadirNodoFinal(artista_nuevo)
+            lista_artistas.agregar_nodo_final(artista_nuevo)
             print('agrego artista')
         
         el_artista = lista_artistas.get(nombre_artista)
@@ -51,8 +53,8 @@ def obtencion_datos(ruta):
 
     lista_artistas.imprimirLista()
     print()
-    canciones_artista = input('escriba el nombre del artista que desea ver las canciones: ')
-    mostr_canciones_artista(canciones_artista)
+    nombre_artista_obtener = input('escriba el nombre del artista que desea ver las canciones: ')
+    mostr_canciones_artista(nombre_artista_obtener)
 
 def mostr_canciones_artista(nombre):
     el_artista = lista_artistas.get(nombre)
@@ -63,7 +65,8 @@ def mostr_canciones_artista(nombre):
         el_album.canciones.imprimirLista()
         nodo_temporal1 = nodo_temporal1.siguiente
         
-    
+def agreg_cancion_lista(datos_cancion):
+    print()
 
                 
 
