@@ -1,4 +1,4 @@
-import estructura
+import interfaz
 
 if __name__ == '__main__':
-    estructura.pedir_ruta()
+    interfaz

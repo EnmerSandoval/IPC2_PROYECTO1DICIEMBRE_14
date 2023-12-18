@@ -42,4 +42,16 @@
         <imagen>"C: \Users Monica Calderon\Desktop\Diciembre 2021 \IPC2\SimplePlan_PP.jpg"</imagen>
         <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
     </cancion>
+    <cancion nombre="Cancion prueba">
+        <artista>"prueba"</artista>
+        <album>"prueba"</album>
+        <imagen>"C: \Users Monica Calderon\Desktop\Diciembre 2021 \IPC2\SimplePlan_PP.jpg"</imagen>
+        <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
+    </cancion>
+    <cancion nombre="Cancion prueba 2">
+        <artista>"prueba 2"</artista>
+        <album>"prueba 2"</album>
+        <imagen>"C: \Users Monica Calderon\Desktop\Diciembre 2021 \IPC2\SimplePlan_PP.jpg"</imagen>
+        <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
+    </cancion>
 </biblioteca>
