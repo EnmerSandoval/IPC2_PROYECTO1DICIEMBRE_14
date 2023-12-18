@@ -56,8 +56,8 @@ def obtencion_datos(ruta):
     lista_artistas.imprimirLista()
     
     print()
-    nombre_artista_obtener = input('escriba el nombre del artista que desea ver las canciones: ')
-    mostr_canciones_artista(nombre_artista_obtener)
+    #nombre_artista_obtener = input('escriba el nombre del artista que desea ver las canciones: ')
+    #mostr_canciones_artista(nombre_artista_obtener)
 
 def mostr_canciones_artista(nombre):
     el_artista = lista_artistas.get(nombre)
@@ -78,16 +78,16 @@ def buscar_cancion(nombre_cancion):
             el_album = el_artista.album.get(nodo_temporal2.dato.nombre)
             nombre_album = el_album.nombre
             la_cancion = el_album.canciones.get(nombre_cancion)
-            
             if la_cancion is None:
                 #no encontro la cancino y metodo get nos devulve None
                 #ponemos continue para que pase al siguiente album
                 nodo_temporal2 = nodo_temporal2.siguiente
             else:
                 #si encuentra la cancion mandaremos los parametros a la interfaz
-                interfaz.label_nombre_cancion.config(text=la_cancion)
+                interfaz.label_nombre_cancion.config(text=la_cancion.nombre)
                 interfaz.label_nombre_album.config(text=nombre_album) 
                 interfaz.label_nombre_artista.config(text=nombre_artista)
+                interfaz.colocar_imagen_album(el_album.ruta)
                 return
         nodo_temporal = nodo_temporal.siguiente
     #salio de todos los whiles, por ende ya busco en todas las canciones de todos

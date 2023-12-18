@@ -45,7 +45,7 @@
     <cancion nombre="Cancion prueba">
         <artista>"prueba"</artista>
         <album>"prueba"</album>
-        <imagen>"C: \Users Monica Calderon\Desktop\Diciembre 2021 \IPC2\SimplePlan_PP.jpg"</imagen>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png"</imagen>
         <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
     </cancion>
     <cancion nombre="Cancion prueba 2">

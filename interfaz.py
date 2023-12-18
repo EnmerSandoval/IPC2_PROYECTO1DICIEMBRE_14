@@ -33,6 +33,15 @@ def anterior_cancion():
 
 def mostrar_mensaje_error(mensaje):
     messagebox.showerror('Error: ', mensaje)
+
+def colocar_imagen_album(ruta):
+    global imagen_logo, resized_logo, logo_imagen
+    imagen_logo = Image.open(ruta)
+    resized_logo = imagen_logo.resize((250, 250))
+    logo_imagen = ImageTk.PhotoImage(resized_logo)
+    canvas_imagen.delete()
+    canvas_imagen.create_image(0, 0, anchor='nw', image=logo_imagen)
+    canvas_imagen.pack()
     
 root = Tk.Tk()
 root.title("MP3 Player")
