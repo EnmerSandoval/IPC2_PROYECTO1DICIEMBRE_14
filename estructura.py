@@ -7,6 +7,7 @@ import albums
 import canciones
 import interfaz
 import playlist
+import creacion_xml
 lista_artistas = lista_doble_enlazada.ListaDoble()
 lista_reproduccion = lista_doble_ciruclar.lista_circular()
 lista_reproducir = None
@@ -282,6 +283,24 @@ def siguiente_cancion():
             cancion_nueva = la_lista.canciones.get(nodo_temporal1.valor.nombre)
             cancion_actual = cancion_nueva.nombre
             return cancion_actual
+        nodo_temporal1 = nodo_temporal1.siguiente
+        if nodo_temporal1 is la_lista.canciones.primero:
+            return
+
+def mostrar_reporte_reproducidos():
+    la_lista = lista_reproduccion.get(lista_reproducir)
+    nodo_temporal1 = la_lista.canciones.primero
+    while nodo_temporal1 is not None:
+        if nodo_temporal1 is not None:
+            la_cancion = la_lista.canciones.get(nodo_temporal1.valor.nombre)
+            print('nombre de la cancion en la lista ', la_cancion.nombre)
+            nombre_cancion = la_cancion.nombre
+            album_cancion = la_cancion.nombre_alb
+            artista_cancion = la_cancion.nombre_art
+            ruta_imagen = la_cancion.ruta_album
+            ruta_audio = la_cancion.ruta
+            veces_repetida = la_cancion.retornar_reproduccion
+            creacion_xml.exportar_cancion_a_xml(lista_reproducir,nombre_cancion,artista_cancion,album_cancion,veces_repetida,ruta_imagen,ruta_audio)
         nodo_temporal1 = nodo_temporal1.siguiente
         if nodo_temporal1 is la_lista.canciones.primero:
             return

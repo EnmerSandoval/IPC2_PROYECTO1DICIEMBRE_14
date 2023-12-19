@@ -199,7 +199,7 @@ menu_archivo = Tk.Menu(menu)
 menu.add_cascade(label="Archivo", menu=menu_archivo)
 menu_archivo.add_command(label="Cargar biblioteca", command=cargar_biblioteca)
 menu_archivo.add_command(label="Crear playlist por cancion", command=mostar_frame_playlist)
-menu_archivo.add_command(label="Mostrar más reproducidos")
+menu_archivo.add_command(label="Mostrar más reproducidos",command=estructura.mostrar_reporte_reproducidos)
 menu_archivo.add_command(label="Mostrar reporte de biblioteca")
 
 # Frames
