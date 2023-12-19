@@ -21,22 +21,25 @@ def exportar_cancion_a_xml(nombre_lista, nombre_cancion, nombre_artista, nombre_
     except (FileNotFoundError, ET.ParseError):
         tree = ET.ElementTree(ET.Element("biblioteca"))
         biblioteca = tree.getroot()
+    
+    nombrelista_elem = ET.SubElement(biblioteca, "nombreLista", nombre=nombre_lista)
 
-    cancion_elem = ET.SubElement(biblioteca, "cancion", nombre=nombre_cancion)
+    cancion_elem = ET.SubElement(nombrelista_elem, "cancion")
+    cancion_elem.text = nombre_cancion
 
-    artista_elem = ET.SubElement(cancion_elem, "artista")
+    artista_elem = ET.SubElement(nombrelista_elem, "artista")
     artista_elem.text = nombre_artista
 
-    album_elem = ET.SubElement(cancion_elem, "album")
+    album_elem = ET.SubElement(nombrelista_elem, "album")
     album_elem.text = nombre_album
 
-    imagen_elem = ET.SubElement(cancion_elem, "imagen")
+    imagen_elem = ET.SubElement(nombrelista_elem, "imagen")
     imagen_elem.text = ruta_imagen
 
-    ruta_elem = ET.SubElement(cancion_elem, "ruta")
+    ruta_elem = ET.SubElement(nombrelista_elem, "ruta")
     ruta_elem.text = ruta_audio
 
-    veces_reproducida_elem = ET.SubElement(cancion_elem, "vecesReproducida")
+    veces_reproducida_elem = ET.SubElement(nombrelista_elem, "vecesReproducida")
     veces_reproducida_elem.text = str(veces_repetida)
 
     xml_str = minidom.parseString(ET.tostring(tree.getroot())).toprettyxml(indent="  ")
