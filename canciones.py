@@ -1,7 +1,8 @@
 class cancion:
-    def __init__(self, nombre_cancion, ruta_audio,nombre_artista, nombre_album):
+    def __init__(self, nombre_cancion, ruta_audio,nombre_artista, nombre_album,ruta_album):
         self.nombre = nombre_cancion
         self.ruta = ruta_audio
+        self.ruta_album = ruta_album
         self.nombre_art = nombre_artista
         self.nombre_alb = nombre_album
         self.reproducciones = 0

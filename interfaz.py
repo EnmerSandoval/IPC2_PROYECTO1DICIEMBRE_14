@@ -53,7 +53,7 @@ def pausar_cancion():
 
 #metodo para siguiente cancion y en caso sea una sola cancion debera realizar funcion de parar cancion
 def siguiente_cancion():
-    print("siguiente...")
+    estructura.cambiar_siguiente_cancion()
 
 #metodo para anterior cancion y en caso sea una sola cancion debera realizar funcion de parar cancion
 def anterior_cancion():
@@ -84,7 +84,7 @@ def obtener_cancion_buscar(nombre):
 #metodo para obtener datos de la cancion para agregar a playlist
 def obtener_cancion_mostrar(nombre):
     print(f"el texto a buscar es: {nombre}")
-    if nombre_playlist_almacenada is None:
+    if nombre_playlist_almacenada is None or nombre_playlist_almacenada =='':
         mensaje = 'no se ha cargado la playlist a la cual se agregara la cancion'
         mostrar_mensaje_error(mensaje)
         return
@@ -94,8 +94,8 @@ def obtener_cancion_mostrar(nombre):
         print(datos_cancion)
         label_rectangular_global.config(text=datos_cancion)
         root.update_idletasks()
-        datos_usar = datos_cancion.splt('/')
-        print(datos_usar[0],datos_usar[1],datos_usar[2])
+        estructura.agreg_cancion_lista(nombre_playlist_almacenada,nombre)
+
     
 
 #metodo para obtener dato del entry dentro del frame crear playlist
@@ -152,6 +152,9 @@ def cargar_playlist():
 
 #metodo para crear un labelFrame
 def mostar_frame_playlist():
+    global nombre_playlist_almacenada
+    nombre_playlist_almacenada = None
+
     frame_playlist.place(x=0, y=0, width=876, height=476)
     global lupa_image, resized_lupa,lupa_image
     #entry labelFrame playlist
@@ -268,39 +271,39 @@ label_lupa.place(x=530, y=21, width=28, height=28)
 
 # botones
 
-# Play Button
+# Play boton
 image_play = Image.open('play.png')
 resized_play = image_play.resize((50, 50))
 play_image = ImageTk.PhotoImage(resized_play)
 Tk.Button(frame_secundario,image=play_image,command=reproducir_cancion,bg='#81BEF7',highlightthickness=0).place(x=400, y=85, width=50, height=50)
 
 
-# Pause Button
+# Pausa boton
 image_pause = Image.open('pause.png')
 resized_pause = image_pause.resize((50,50))
 pause_image = ImageTk.PhotoImage(resized_pause)
 Tk.Button(frame_secundario,image=pause_image,command=pausar_cancion,bg='#81BEF7',highlightthickness=0).place(x=525, y=85, width=50, height=50)
 
-# Stop Button
+# Para boton
 image_stop = Image.open('stop.png')
 resized_stop = image_stop.resize((40,40))
 stop_image = ImageTk.PhotoImage(resized_stop)
 Tk.Button(frame_secundario,image=stop_image, command=parar_cancion,bg='#81BEF7',highlightthickness=0).place(x=650, y=85, width=50, height=50)
 
-# next Button
+# next boton
 image_next = Image.open('next.png')
 resized_next = image_next.resize((40,40))
 next_image = ImageTk.PhotoImage(resized_next)
 Tk.Button(frame_secundario,image=next_image,command=siguiente_cancion,bg='#81BEF7',highlightthickness=0).place(x=475, y=315, width=50, height=50)
 
-# back Button
+# back boton
 image_back = Image.open('back.png')
 resized_back = image_back.resize((40,40))
 image_back = ImageTk.PhotoImage(resized_back)
 Tk.Button(frame_secundario,image=image_back, command=anterior_cancion,bg='#81BEF7',highlightthickness=0).place(x=600, y=315, width=50, height=50)
 
 #boton buscar frame secundario
-boton_buscar = Tk.Button(frame_secundario, text="Buscar", font=('Arial', 12, 'bold'), command=lambda: [obtener_cancion_buscar(entry_buscar.get()), entry_buscar.delete(0, 'end')])
+boton_buscar = Tk.Button(frame_secundario, text="Buscar", font=('Arial', 12, 'bold'), command=lambda: [estructura.colocar_cancion_display(entry_buscar.get()), entry_buscar.delete(0, 'end')])
 boton_buscar.place(x=560, y=21, width=100, height=30)
 
 
