@@ -8,6 +8,8 @@ import canciones
 import interfaz
 import playlist
 import creacion_xml
+import reporte_html
+
 lista_artistas = lista_doble_enlazada.ListaDoble()
 lista_reproduccion = lista_doble_ciruclar.lista_circular()
 lista_reproducir = None
@@ -303,4 +305,5 @@ def mostrar_reporte_reproducidos():
             creacion_xml.exportar_cancion_a_xml(lista_reproducir,nombre_cancion,artista_cancion,album_cancion,veces_repetida,ruta_imagen,ruta_audio)
         nodo_temporal1 = nodo_temporal1.siguiente
         if nodo_temporal1 is la_lista.canciones.primero:
-            return
+            break
+    reporte_html.reporte('biblioteca_final.xml')
