@@ -310,4 +310,4 @@ def mostrar_reporte_reproducidos(lista):
         nodo_temporal1 = nodo_temporal1.siguiente
         if nodo_temporal1 is la_lista.canciones.primero:
             break
-    reporte_html.reporte('biblioteca_final.xml')
+    reporte_html.reporte('prueba_html.xml')
