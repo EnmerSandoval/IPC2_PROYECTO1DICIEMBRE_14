@@ -1,0 +1,63 @@
+html{
+    background-color: #A3C9D9;
+    font-family: Rubik Doodle Shadow, Arial;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.title{
+    font-size: 60px;
+}
+
+.intro{
+    color: white;
+    font-size: 30px;
+    transform: rotate(-1deg);
+    margin: 10px auto;
+}
+
+.songs{
+    background-color: #295073;
+    width: 70%;
+    margin: 20px auto;
+    transform: rotate(1deg);
+    padding: 30px 20px;
+}
+
+.song{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 20px 0;
+    transform: rotate(-1deg);
+    background-color: #A62D65;
+}
+
+.songName{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 17px;
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.album{
+    width: 150px;
+    background-color: #F25C5C;
+    padding: 10px;
+}
