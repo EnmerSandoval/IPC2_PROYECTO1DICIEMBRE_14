@@ -3,43 +3,55 @@
     <cancion nombre="Attack on bangtan">
         <artista>"BTS"</artista>
         <album>"O! RUL8,2?"</album>
-        <imagen>"C:\Users\Monica Calderon\Desktop\Diciembre 2021\IPC2\AOB_BTS.jpg" </imagen>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png"" </imagen>
         <ruta>"C:\Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\AOB_BTS.mp3"</ruta>
     </cancion>
     <cancion nombre="the middle">
         <artista>"Jimmy Eat World"</artista>
         <album> "Bleed American1"</album>
-        <imagen>"C:\Users\Monica Calderon\Desktop\Diciembre 2021 \IPC2\theMiddleJEW.jpg"</imagen>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png""</imagen>
         <ruta>"C:\Users\Monica Calderon\Desktop\Diciembre 2021\IPC2\theMiddleJEW.mp3"</ruta>
     </cancion>
     <cancion nombre="Perfectly Perfect">
         <artista>"Simple plan"</artista>
         <album>"Taking One for the Team"</album>
-        <imagen>"C: \Users Monica Calderon\Desktop\Diciembre 2021 \IPC2\SimplePlan_PP.jpg"</imagen>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png""</imagen>
         <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
     </cancion>
     <cancion nombre="2da cancion de bleed american">
         <artista>"Jimmy Eat World"</artista>
         <album> "Bleed American1"</album>
-        <imagen>"C:\Users\Monica Calderon\Desktop\Diciembre 2021 \IPC2\theMiddleJEW.jpg"</imagen>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png""</imagen>
         <ruta>"C:\Users\Monica Calderon\Desktop\Diciembre 2021\IPC2\theMiddleJEW.mp3"</ruta>
     </cancion>
     <cancion nombre="segunda cancion del segundo album">
         <artista>"BTS"</artista>
         <album>"2do album bts"</album>
-        <imagen>"C:\Users\Monica Calderon\Desktop\Diciembre 2021\IPC2\AOB_BTS.jpg" </imagen>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png"" </imagen>
         <ruta>"C:\Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\AOB_BTS.mp3"</ruta>
     </cancion>
     <cancion nombre="primer cancion segundo album">
         <artista>"Jimmy Eat World"</artista>
         <album> "2do album jimmy"</album>
-        <imagen>"C:\Users\Monica Calderon\Desktop\Diciembre 2021 \IPC2\theMiddleJEW.jpg"</imagen>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png""</imagen>
         <ruta>"C:\Users\Monica Calderon\Desktop\Diciembre 2021\IPC2\theMiddleJEW.mp3"</ruta>
     </cancion>
     <cancion nombre="2da canccion simple plan">
         <artista>"Simple plan"</artista>
         <album>"Taking One for the Team"</album>
-        <imagen>"C: \Users Monica Calderon\Desktop\Diciembre 2021 \IPC2\SimplePlan_PP.jpg"</imagen>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png""</imagen>
+        <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
+    </cancion>
+    <cancion nombre="Cancion prueba">
+        <artista>"prueba"</artista>
+        <album>"prueba"</album>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png"</imagen>
+        <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
+    </cancion>
+    <cancion nombre="Cancion prueba 2">
+        <artista>"prueba 2"</artista>
+        <album>"prueba 2"</album>
+        <imagen>"E:\vacas diciembre 2023\lab ipc2\proyecto1\album_prueba.png""</imagen>
         <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
     </cancion>
 </biblioteca>
