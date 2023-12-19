@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListasReproduccion>
+    <Lista nombre="Mi lista">
+        <cancion nombre="Happier Than Ever">
+            <artista>"Billie Eilish"</artista>
+            <album>"Happier Than Ever"</album>
+            <vecesReproducida>7</vecesReproducida>
+            <imagen>"./wrapped/HappierThanEver.png" </imagen>
+            <ruta>"C:\Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\AOB_BTS.mp3"</ruta>
+        </cancion>
+        <cancion nombre="Male Fantasy">
+            <artista>"Billie Eilish"</artista>
+            <album> "Happier Than Ever"</album>
+            <vecesReproducida>1</vecesReproducida>
+            <imagen>"./wrapped/HappierThanEver.png"</imagen>
+            <ruta>"C:\Users\Monica Calderon\Desktop\Diciembre 2021\IPC2\theMiddleJEW.mp3"</ruta>
+        </cancion>
+        <cancion nombre="Selfless">
+            <artista>"The Strokes"</artista>
+            <album>"The New Abnormal"</album>
+            <vecesReproducida>2</vecesReproducida>
+            <imagen>"./wrapped/NewAbnormal.jpg"</imagen>
+            <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
+        </cancion>
+        <cancion nombre="The Adults Are Talking">
+            <artista>"The Strokes"</artista>
+            <album> "The New Abnormal"</album>
+            <vecesReproducida>6</vecesReproducida>
+            <imagen>"./wrapped/NewAbnormal.jpg"</imagen>
+            <ruta>"C:\Users\Monica Calderon\Desktop\Diciembre 2021\IPC2\theMiddleJEW.mp3"</ruta>
+        </cancion>
+        <cancion nombre="Give Life Back To Music">
+            <artista>"Daft Punk"</artista>
+            <album>"Random Access Memories"</album>
+            <vecesReproducida>4</vecesReproducida>
+            <imagen>"./wrapped/RandomAccessMemories.jpg" </imagen>
+            <ruta>"C:\Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\AOB_BTS.mp3"</ruta>
+        </cancion>
+        <cancion nombre="Giorgio by Moroder">
+            <artista>"Daft Punk"</artista>
+            <album> "Random Access Memories"</album>
+            <vecesReproducida>8</vecesReproducida>
+            <imagen>"./wrapped/RandomAccessMemories.jpg"</imagen>
+            <ruta>"C:\Users\Monica Calderon\Desktop\Diciembre 2021\IPC2\theMiddleJEW.mp3"</ruta>
+        </cancion>
+        <cancion nombre="Instant Crush">
+            <artista>"Daft Punk"</artista>
+            <album>"Random Access Memories"</album>
+            <vecesReproducida>14</vecesReproducida>
+            <imagen>"./wrapped/RandomAccessMemories.jpg"</imagen>
+            <ruta>"C: \Users \Monica Calderon\Desktop\Diciembre 2021\IPC2\SimplePlan_PP.mp3"</ruta>
+        </cancion>
+    </Lista>
+</ListasReproduccion>
