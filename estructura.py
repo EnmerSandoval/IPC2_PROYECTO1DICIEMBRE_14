@@ -9,6 +9,7 @@ import interfaz
 import playlist
 import creacion_xml
 import reporte_html
+import reporte_graphviz
 
 lista_artistas = lista_doble_enlazada.ListaDoble()
 lista_reproduccion = lista_doble_ciruclar.lista_circular()
@@ -73,6 +74,9 @@ def obtener_texto():
         return interfaz.label_nombre_cancion.config("text")[-1]
     
 def mostr_canciones_playlist(nombre,cancion_actual):
+    mostrar_reporte_reproducidos(nombre)
+    reporte_graphviz.ReporteGraphviz.graficar_lista_doble(lista_artistas)
+    
     la_lista = lista_reproduccion.get(nombre)
     if cancion_actual == '..........':
         nodo_temporal1 = la_lista.canciones.primero
@@ -289,8 +293,8 @@ def siguiente_cancion():
         if nodo_temporal1 is la_lista.canciones.primero:
             return
 
-def mostrar_reporte_reproducidos():
-    la_lista = lista_reproduccion.get(lista_reproducir)
+def mostrar_reporte_reproducidos(lista):
+    la_lista = lista_reproduccion.get(lista)
     nodo_temporal1 = la_lista.canciones.primero
     while nodo_temporal1 is not None:
         if nodo_temporal1 is not None:
@@ -302,7 +306,7 @@ def mostrar_reporte_reproducidos():
             ruta_imagen = la_cancion.ruta_album
             ruta_audio = la_cancion.ruta
             veces_repetida = la_cancion.retornar_reproduccion
-            creacion_xml.exportar_cancion_a_xml(lista_reproducir,nombre_cancion,artista_cancion,album_cancion,veces_repetida,ruta_imagen,ruta_audio)
+            creacion_xml.exportar_cancion_a_xml(lista,nombre_cancion,artista_cancion,album_cancion,veces_repetida,ruta_imagen,ruta_audio)
         nodo_temporal1 = nodo_temporal1.siguiente
         if nodo_temporal1 is la_lista.canciones.primero:
             break
