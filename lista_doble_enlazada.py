@@ -61,7 +61,7 @@ class ListaDoble:
         nodoTemporal = self.head
         while nodoTemporal is not None:
             # Si el dato actual es el que buscamos
-            if (nodoTemporal.dato.nombre == nombre):
+            if nodoTemporal.dato.nombre == nombre:
                 return nodoTemporal.dato
             nodoTemporal = nodoTemporal.siguiente
         # Si ya buscamos toda la lista y no lo encontramos

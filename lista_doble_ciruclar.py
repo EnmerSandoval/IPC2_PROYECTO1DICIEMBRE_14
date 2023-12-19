@@ -40,6 +40,18 @@ class lista_circular:
         if self.primero is not None:
             actual = self.primero
             while actual.siguiente != self.primero:
-                print(actual.valor)
+                print(actual.valor.nombre)
                 actual = actual.siguiente
-            print(actual.valor)
+            print(actual.valor.nombre)
+
+    def get(self,nombre):
+        #caso de estar vacia
+        if self.primero is None:
+            return None
+        nodo_temporal = self.primero
+        while nodo_temporal.siguiente is not None:
+            if nodo_temporal.valor.nombre == nombre:
+                return nodo_temporal.valor
+            nodo_temporal = nodo_temporal.siguiente
+            if nodo_temporal is self.primero:
+                return None
